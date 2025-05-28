@@ -1,4 +1,4 @@
-# Advanced N x N Tic Tac Toe
+# Advanced Tic Tac Toe
 
 A creative and modern web application for playing an advanced version of Tic Tac Toe. This game allows for a customizable board size (N x N) and a variable win condition (M marks in a row).
 
