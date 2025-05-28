@@ -32,25 +32,27 @@
 
 .cell:active:not(:disabled) {
   transform: scale(0.96);
+  background: #f0f4ff;
+  box-shadow: 0 1px 6px #c3cbe9;
 }
 
 .cell:hover:not(:disabled) {
-  background: #e3eafc;
-  box-shadow: 0 0 12px #b6b6e680;
-  border: 1.5px solid #a3bffa;
+  background: #e9effd;
+  box-shadow: 0 0 16px #c3cbe9a0;
+  border: 1.5px solid #b6b6e6;
 }
 
 .cell.win {
-  background: #fffbe6 !important;
-  border: 2px solid #ffe066;
-  color: #b08968;
-  box-shadow: 0 0 16px #ffe06680;
-  animation: win-glow 1.2s infinite alternate;
+  background: #cfe3ff !important;
+  border: 2px solid #a3bffa;
+  color: #2d314d;
+  box-shadow: 0 0 18px #a3bffa90;
+  animation: win-pulse 1.5s infinite alternate ease-in-out;
 }
 
-@keyframes win-glow {
-  0% { box-shadow: 0 0 12px 4px #ffe066; }
-  100% { box-shadow: 0 0 24px 8px #ffe066; }
+@keyframes win-pulse {
+  0% { box-shadow: 0 0 10px 3px #a3bffa; }
+  100% { box-shadow: 0 0 20px 6px #a3bffa; }
 }
 
 @media (max-width: 600px) {

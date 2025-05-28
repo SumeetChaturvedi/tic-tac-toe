@@ -18,6 +18,8 @@
   color: #2d314d;
   font-weight: 600;
   letter-spacing: 0.2px;
+  flex-grow: 1;
+  flex-basis: 120px;
 }
 .controls input[type="number"],
 .controls input[type="text"] {
@@ -50,9 +52,30 @@
   transition: background 0.2s, box-shadow 0.2s, transform 0.1s;
   box-shadow: 0 2px 8px #e3eafc60;
   font-family: inherit;
+  align-self: auto;
 }
 .controls button:hover {
   background: #7f9cf5;
   box-shadow: 0 0 12px #a3bffa80;
   transform: scale(1.04);
+}
+.controls button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(163, 191, 250, 0.5);
+  transform: scale(1.02);
+}
+
+/* Add media query for smaller screens to enable wrapping */
+@media (max-width: 768px) {
+  .controls {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .controls label {
+    flex-basis: 140px;
+    flex-grow: 1;
+  }
+  .controls button {
+    align-self: center;
+  }
 } 

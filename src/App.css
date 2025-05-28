@@ -55,11 +55,12 @@ body.dark {
 
 .app-container {
   max-width: 700px;
+  width: 95%;
   margin: 36px auto;
   background: #fff;
   border-radius: 24px;
   box-shadow: 0 8px 32px rgba(60, 60, 120, 0.10);
-  padding: 36px 18px 24px 18px;
+  padding: clamp(20px, 5vw, 36px) clamp(10px, 3vw, 18px);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,19 +100,18 @@ footer {
   text-align: center;
 }
 
-@media (max-width: 600px) {
-  .app-container {
-    padding: 8px 2px 8px 2px;
-    max-width: 98vw;
-  }
-  .board {
-    gap: 4px;
-  }
-  .cell {
-    width: 32px;
-    height: 32px;
-    font-size: 1.2rem;
-  }
+.win-counts {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2d314d;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.win-counts span {
+  /* Specific styles for each player's count could go here if needed */
 }
 
 .confetti {

@@ -13,4 +13,20 @@
   border: none;
   font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
   transition: background 0.3s, color 0.3s;
+}
+
+.status-bar--playing {
+  /* Default styles for playing state (already mostly defined above) */
+}
+
+.status-bar--win {
+  background: #e6ffed; /* Light green background for win */
+  color: #228b22; /* Darker green text color for win */
+  box-shadow: 0 2px 8px rgba(34, 139, 34, 0.3);
+}
+
+.status-bar--draw {
+  background: #e0e0e0; /* Grey background for draw */
+  color: #555; /* Darker grey text color for draw */
+  box-shadow: 0 2px 8px rgba(85, 85, 85, 0.3);
 } 
