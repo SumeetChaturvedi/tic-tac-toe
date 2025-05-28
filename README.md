@@ -6,13 +6,14 @@ A creative and modern web application for playing an advanced version of Tic Tac
 
 - **Dynamic Board Size (N x N):** Set the dimensions of the game board.
 - **Custom Win Length (M):** Define how many consecutive marks are needed to win.
-- **Player Names & Avatars:** Enter player names and see their initials as avatars in the lobby.
-- **Pre-Game Lobby:** A unique starting screen with player names and a smooth transition to the game.
-- **Progressive Win Highlighting:** See the winning line animate step-by-step.
-- **Sound Effects:** Subtle clicks for moves and a pleasant chime for wins.
-- **Post-Win Celebration Modal:** A modern modal showing the winner, win summary, and options to play again or change players.
-- **Responsive Design:** Play seamlessly on different screen sizes.
-- **Modern UI:** Clean, pastel-colored interface with rounded elements and smooth animations.
+- **Player Names & Lobby:** Enter player names in a pre-game lobby with avatars before starting the game.
+- **Win Highlighting:** The winning line of cells is highlighted after a player wins.
+- **Confetti Celebration:** A confetti effect is triggered when a player wins.
+- **Simple Player Stats:** Track the number of wins for each player during the current session.
+- **Dynamic Status Bar:** The status bar provides clear feedback on the current player's turn, win, or draw, with changing styles.
+- **Responsive Design:** The game layout adapts to different screen sizes for play on various devices.
+- **Accessibility Improvements:** Enhanced accessibility for screen readers and keyboard navigation.
+- **Modern UI:** Clean, pastel-colored interface with rounded elements.
 
 ## Tech Stack
 
@@ -21,27 +22,4 @@ A creative and modern web application for playing an advanced version of Tic Tac
 - Plain CSS
 - canvas-confetti
 
-## Setup and Run
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/SumeetChaturvedi/tic-tac-toe.git
-   ```
-2. **Navigate to the project directory:**
-   ```bash
-   cd tic-tac-toe
-   ```
-3. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-4. **Run the development server:**
-   ```bash
-   npm run dev
-   ```
-
-The app will be available at `http://localhost:5174/` (or a similar port if 5174 is in use).
-
-## Credits
-
-Built as an assignment for WorkCrew.
