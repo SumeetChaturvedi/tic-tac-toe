@@ -1,0 +1,16 @@
+.status-bar {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: #2d314d;
+  margin: 18px 0 10px 0;
+  text-align: center;
+  letter-spacing: 0.5px;
+  min-height: 2.2em;
+  background: #f6f7fb;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #e3eafc60;
+  padding: 10px 0;
+  border: none;
+  font-family: 'Inter', 'Segoe UI', 'Roboto', Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+} 
